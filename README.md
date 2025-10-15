@@ -4,6 +4,15 @@ Este projeto demonstra como usar um **ESP32** para monitorar temperatura, umidad
 
 ---
 
+## 👥 Participantes do Grupo
+
+- **Kazys Tatarunas** – RM: 564020  
+- **Eduardo Viudes** – RM: 564075  
+- **Frederico de Paula** – RM: 562109 
+- **Victor Tadashi** – RM: 563582  
+
+---
+
 ## 📦 Componentes necessários
 
 - ESP32
