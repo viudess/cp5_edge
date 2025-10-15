@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+
+[simulation]
+board = "esp32-devkit-v1"
+diagram = "diagram.json"
+firmware = "build/firmware.ino.bin"
