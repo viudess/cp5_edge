@@ -100,7 +100,7 @@ Para interagir com o projeto, acesse a simulação no Wokwi através do link aba
 
 A imagem abaixo ilustra a pinagem de um ESP32 genérico, semelhante ao utilizado no projeto. O LED integrado geralmente está conectado ao pino `GPIO 2`.
 
-![ESP32 Pinout](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/08/esp32-dokit-v1-pinout-gpios.jpg?w=700&ssl=1)
+![ESP32 Pinout](/images/esp32.png)
 
 ---
 
