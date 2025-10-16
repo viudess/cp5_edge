@@ -51,39 +51,34 @@ const char* TOPIC_SUB = "viudes1407/cmd";
 const char* TOPIC_PUB = "viudes1407/attrs";
 const char* CLIENT_ID = "ESP32_Viudes1407";
 ```
-TOPIC_SUB: tópico onde o ESP32 recebe comandos (ON / OFF).
+- TOPIC_SUB: tópico onde o ESP32 recebe comandos (ON / OFF).
+- TOPIC_PUB: tópico onde o ESP32 publica os dados do sensor.
 
-TOPIC_PUB: tópico onde o ESP32 publica os dados do sensor.
+---
 
-💻 Funcionalidades
-
-Monitoramento de sensores:
-
-Temperatura (°C)
-
-Umidade (%)
-
-Nível de luminosidade (%)
-
-Controle de LED via MQTT
-
-Comando ON → LED acende
-
-Comando OFF → LED apaga
-
-Publicação periódica de dados
-
-A cada 4 segundos
+## 💻 Funcionalidades
+1. Monitoramento de sensores:
+- Temperatura (°C)
+- Umidade (%)
+- Nível de luminosidade (%)
+2. Controle de LED via MQTT
+- Comando ON → LED acende
+- Comando OFF → LED apaga
+3. Publicação periódica de dados
+- A cada 4 segundos
 
 Formato JSON enviado pelo ESP32:
-
+```json
 {
   "temp": 25.4,
   "umid": 60.2,
   "lum": 75
 }
+```
 
-🚀 Como usar
+---
+
+## 🚀 Como usar
 
 Conecte o ESP32 à sua rede Wi-Fi.
 
