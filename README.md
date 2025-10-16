@@ -78,14 +78,29 @@ Formato JSON enviado pelo ESP32:
 
 ---
 
-## 🚀 Como usar
+## 🚀 Como Usar
 
-1. Conecte o ESP32 à sua rede Wi-Fi.
-2. Certifique-se de que o broker MQTT está acessível (ex.: HiveMQ Broker).
-3. Abra o monitor serial para ver logs e dados enviados.
-4. Envie mensagens para o tópico viudes1407/cmd para controlar o LED:
-- `ON` → acende
-- `OFF` → apaga
+Para interagir com o projeto, acesse a simulação no Wokwi através do link abaixo. A plataforma permite que você execute o código e interaja com o ESP32 virtualmente, sem a necessidade de hardware físico.
+
+[**Acessar o Projeto no Wokwi**](https://wokwi.com/projects/444915840852511745)
+
+### Passos para Operação
+
+1.  **Conecte o ESP32 à sua rede Wi-Fi:** No ambiente Wokwi, o ESP32 irá se conectar automaticamente à rede Wi-Fi virtual configurada no código. Se estiver usando um ESP32 físico, certifique-se de inserir as credenciais da sua rede no código-fonte.
+
+2.  **Acessibilidade do Broker MQTT:** O projeto está configurado para usar um broker MQTT público (como o HiveMQ Broker). A conexão será estabelecida automaticamente.
+
+3.  **Monitore a Saída:** Abra o "Serial Monitor" na simulação do Wokwi para visualizar os logs de conexão e os dados que estão sendo enviados e recebidos pelo ESP32.
+
+4.  **Controle o LED:** Para controlar o LED, você precisará de um cliente MQTT (pode ser um aplicativo de celular, um software para desktop ou uma interface web como a do [HiveMQ](https://www.hivemq.com/demos/websocket-client/)) para publicar mensagens no tópico `viudes1407/cmd`.
+    * Envie a mensagem `ON` para acender o LED.
+    * Envie a mensagem `OFF` para apagar o LED.
+
+## Diagrama do ESP32
+
+A imagem abaixo ilustra a pinagem de um ESP32 genérico, semelhante ao utilizado no projeto. O LED integrado geralmente está conectado ao pino `GPIO 2`.
+
+![ESP32 Pinout](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/08/esp32-dokit-v1-pinout-gpios.jpg?w=700&ssl=1)
 
 ---
 
