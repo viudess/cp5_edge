@@ -80,34 +80,24 @@ Formato JSON enviado pelo ESP32:
 
 ## 🚀 Como usar
 
-Conecte o ESP32 à sua rede Wi-Fi.
+1. Conecte o ESP32 à sua rede Wi-Fi.
+2. Certifique-se de que o broker MQTT está acessível (ex.: HiveMQ Broker).
+3. Abra o monitor serial para ver logs e dados enviados.
+4. Envie mensagens para o tópico viudes1407/cmd para controlar o LED:
+- `ON` → acende
+- `OFF` → apaga
 
-Certifique-se de que o broker MQTT está acessível (ex.: HiveMQ Broker
-).
+---
 
-Abra o monitor serial para ver logs e dados enviados.
+## 📄 Bibliotecas utilizadas
 
-Envie mensagens para o tópico viudes1407/cmd para controlar o LED:
+- WiFi.h - Conexão Wi-Fi
+- PubSubClient - Cliente MQTT
+- DHT.h - Sensor DHT22
 
-ON → acende
+---
 
-OFF → apaga
-
-📄 Bibliotecas utilizadas
-
-WiFi.h
- - Conexão Wi-Fi
-
-PubSubClient
- - Cliente MQTT
-
-DHT.h
- - Sensor DHT22
-
-💡 Dicas
-
-Se usar outro broker MQTT, altere MQTT_BROKER e MQTT_PORT.
-
-Ajuste os pinos se necessário, dependendo do seu hardware.
-
-Pode-se integrar com plataformas IoT, como Node-RED, Home Assistant ou Grafana, para visualizar os dados.
+## 💡 Dicas
+- Se usar outro broker MQTT, altere MQTT_BROKER e MQTT_PORT.
+- Ajuste os pinos se necessário, dependendo do seu hardware.
+- Pode-se integrar com plataformas IoT, como Node-RED, Home Assistant ou Grafana, para visualizar os dados.
