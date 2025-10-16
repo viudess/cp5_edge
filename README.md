@@ -96,9 +96,7 @@ Para interagir com o projeto, acesse a simulação no Wokwi através do link aba
     * Envie a mensagem `ON` para acender o LED.
     * Envie a mensagem `OFF` para apagar o LED.
 
-## Diagrama do ESP32
-
-A imagem abaixo ilustra a pinagem de um ESP32 genérico, semelhante ao utilizado no projeto. O LED integrado geralmente está conectado ao pino `GPIO 2`.
+## ESP32 Montado
 
 ![ESP32 Pinout](/images/esp32.png)
 
